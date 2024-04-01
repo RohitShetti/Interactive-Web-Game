@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(Jungle\ game.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.centerd_text{
+    text-align: center; 
+    margin-top: 78px;
+    color: white;
+}
+
+.boy{
+    background-image: url(boy_running_in_fear-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 171px;
+    height: 170px;
+    position: absolute;
+    bottom:0;
+    left: 52px;
+}
+
+.obstacle{
+    width: 231px;
+    height: 156px;
+    background-image: url(dragon.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+
+.animateBoy{
+    animation: boy 0.6s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    color: white;
+    top:63px;
+    font-size: 60px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#scoreCont{
+    font-size: 25px;
+    color: yellow;
+    font-weight: bold;
+    position: absolute;
+    right: 45px;
+    top: 31px;
+    border: 2px solid greenyellow;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+
+@keyframes boy{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
